@@ -1,13 +1,17 @@
+name: 'GitHub Actions Pytests'
+
 on: push
 
 jobs:
 	build:
 		runs-on: ubuntu-latest
 		steps:
-			- name: checkout
+			- name: "checkout"
 				uses: actions/checkout@v2
-			- name: setup
+
+			- name: "setup"
 				uses: actions/setup-python@v2
+				
 			-	name: install dependencies
 				run: | 
 					python -m pip install --upgrade pip 
