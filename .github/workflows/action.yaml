@@ -8,7 +8,7 @@ jobs:
     
     strategy:
       matrix:
-        node: [3.6,3.8]
+        node: [3.6,3.7,3.8]
 
     steps:
       - name: checkout
