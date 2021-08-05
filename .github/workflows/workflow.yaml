@@ -1,8 +1,7 @@
 on: push
 
 jobs:
-	job1:
-		name: build
+	build:
 		runs-on: ubuntu-latest
 		steps:
 			- name: checkout
