@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           # The Node.js version to configure
-          node-version: ${{ matrix.node }}
+          python-version: ${{ matrix.node }}
 
       - name: black-check@master
         uses: RojerGS/python-black-check@master
