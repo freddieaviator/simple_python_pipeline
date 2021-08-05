@@ -12,6 +12,9 @@ jobs:
       - name: setup
         uses: actions/setup-python@v2
 
+      - name: black-check@master
+        uses: RojerGS/python-black-check@master
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
