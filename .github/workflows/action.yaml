@@ -5,12 +5,20 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node: [3.6, 3.8]
+
     steps:
       - name: checkout
         uses: actions/checkout@v2
 
       - name: setup
         uses: actions/setup-python@v2
+        with:
+          # The Node.js version to configure
+          node-version: ${{ matrix.node }}
 
       - name: black-check@master
         uses: RojerGS/python-black-check@master
