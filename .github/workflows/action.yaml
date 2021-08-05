@@ -25,4 +25,4 @@ jobs:
       
       - name: Running pytests
         run: |
-          pytest test_my_awesome_module.py
+          pytest
